@@ -21,7 +21,7 @@ export const ContactsBook = () => {
       localStorage.setItem('contacts', JSON.stringify(contacts));
       setFlag(false);
     }
-  }, [flag]);
+  }, [flag, contacts]);
 
   const addContacts = data => {
     const name = data.name;
